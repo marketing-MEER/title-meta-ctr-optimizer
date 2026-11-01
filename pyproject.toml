@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "title-meta-ctr-optimizer"
+version = "1.0.0"
+description = "Flag titles/metas that hurt CTR and suggest fixes against the CTR curve"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Meer Hamza", email = "meerhamza5@gmail.com" }]
+requires-python = ">=3.10"
+dependencies = ["requests>=2.28", "beautifulsoup4>=4.11", "pandas>=1.5", "openpyxl>=3.1", "click>=8.1"]
+keywords = ["seo", "title", "meta", "ctr", "optimizer"]
+
+[project.urls]
+Homepage = "https://github.com/marketing-MEER/title-meta-ctr-optimizer"
+"SEO Toolbox" = "https://github.com/marketing-MEER/seo-toolbox"
+LinkedIn = "https://www.linkedin.com/in/meerhamza-seo"
+
+[project.scripts]
+title-meta-ctr-optimizer = "title_meta_ctr_optimizer.cli:main"
+
+[tool.setuptools]
+packages = ["title_meta_ctr_optimizer"]

@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+*.egg-info/
+.venv/
+*.xlsx
+*.htaccess
+*.nginx.conf
+*.html
+!examples/**/*.html
+!tests/**/*.html
